@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+.wiseman {
+  position: fixed;
+  left:60px;
+  bottom:80px;
+  float: left;
+  overflow: hidden;
+}
+
+.wisewords {
+  position: relative;
+  right:10px;
+  bottom:260px;
+  float: right;
+}
+
+.wiseimage {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+.NextButton {
+  position: relative;
+ 
+  bottom:10px;
+  right: -130px;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.nextLevel {
+  position: absolute;
+  bottom:30px;
+  right: 30px;
+}
+
+.caesarWheel {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  
+}
+
+.scroll {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,90%);
+  text-align: center;
+}
+
+.tutorial {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.freqCounter {
+  position: fixed;
+  right:60px;
+  bottom:80px;
+}
+
+.keyAlphabet {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  text-align: center;
+}
