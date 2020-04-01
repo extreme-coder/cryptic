@@ -1,8 +1,5 @@
 import React from 'react';
-import Img from 'react-image'
 import Button from 'react-bootstrap/Button';
-import * as actions from './actions/level2';
-import { connect } from 'react-redux';
 
 class KeyAlphabet extends React.Component {
     constructor(props){
@@ -20,7 +17,8 @@ class KeyAlphabet extends React.Component {
             var newKeyArr = newKey.split('');
             return !newKeyArr.includes(letter)
         }).join('');
-        this.setState({key: newKey, keyAlph: newAlph})
+        this.setState({key: newKey, keyAlph: newAlph});
+        this.props.onChange(this.state.standardAlph,newAlph);
     }
 
     render() {
