@@ -40,6 +40,14 @@ function App() {
           <Route path="/level2">
             <Level2 />
           </Route>
+          <Route path="/level2tutorial">
+            <Tutorial text={
+              <div>
+                <h1>Key Cipher</h1>
+                <h3>glory to the separatists</h3>
+              </div>
+            }/>
+          </Route>
           <Route path="/">
             <Home />
           </Route>
