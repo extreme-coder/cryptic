@@ -10,6 +10,7 @@ import Intro from './pages/Intro';
 import Level1 from './pages/Level1';
 import Level1Final from './pages/Level1Final';
 import Level2 from './pages/Level2';
+import Level2Final from './pages/Level2Final';
 import Tutorial from './pages/Tutorial';
 import Home from './pages/Home';
 
@@ -47,6 +48,9 @@ function App() {
                 <h3>glory to the separatists</h3>
               </div>
             }/>
+          </Route>
+          <Route path="/level2final">
+            <Level2Final />
           </Route>
           <Route path="/">
             <Home />
