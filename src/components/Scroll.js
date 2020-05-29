@@ -1,18 +1,23 @@
 import React from 'react';
 import Img from 'react-image'
+import { Row, Col } from 'react-bootstrap';
 
 class Scroll extends React.Component {
-    constructor(props){
-        super(props);
-    }
 
     render() {
         return (
-            <div className="scroll">
-                <div><p>{this.props.displayText}</p></div>
-                <div><Img src={'./scroll.png'} /></div>
-                
+            <div>
+                <Row className="row-mt-auto scroll" >
+                    <Col sm>
+                    </Col>
+                    <Col className="pt-5">
+                        <p>{this.props.displayText}</p>
+                    </Col>
+                    <Col sm>
+                    </Col>
+                </Row>
             </div>
+
         );
     }
 }

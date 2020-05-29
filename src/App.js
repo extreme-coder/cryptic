@@ -11,6 +11,7 @@ import Level1 from './pages/Level1';
 import Level1Final from './pages/Level1Final';
 import Level2 from './pages/Level2';
 import Level2Final from './pages/Level2Final';
+import Level3 from './pages/Level3';
 import Tutorial from './pages/Tutorial';
 import Home from './pages/Home';
 
@@ -33,7 +34,7 @@ function App() {
                 <h1>Caesar Cipher</h1>
                 <h3>To encrypt To encrypt a Caesar Cipher, simply take the Caesar wheel, and choose a key from 1 to 26. Rotate the wheel a number of times equal to the key. Then, take each letter of the text you want to encrypt, find it on the inner wheel, and replace it with its corresponding letter on the outer wheel. To decrypt it, simply do the same process but in reverse!</h3>
               </div>
-            }/>
+            } nextLevel="/level1final"/>
           </Route>
           <Route path="/level1final">
             <Level1Final />
@@ -47,10 +48,13 @@ function App() {
                 <h1>Key Cipher</h1>
                 <h3>glory to the separatists</h3>
               </div>
-            }/>
+            } nextLevel="/level2final"/>
           </Route>
           <Route path="/level2final">
             <Level2Final />
+          </Route>
+          <Route path="/level3">
+            <Level3 />
           </Route>
           <Route path="/">
             <Home />

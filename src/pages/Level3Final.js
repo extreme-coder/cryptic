@@ -1,12 +1,12 @@
 import React from 'react';
 import Wiseman from '../components/Wiseman'
 import Scroll from '../components/Scroll'
-import KeyAlphabet from '../components/KeyAlphabet'
+import VignereTable from '../components/VignereTable'
 import Next from '../components/Next'
 import Img from 'react-image'
 
 
-class Level2 extends React.Component {
+class Level3Final extends React.Component {
     constructor(props){
         super(props);
         this.state={cText: "poopityscoop", dText: "poopityscoop", tText: "scoopdiddywhoop"}
@@ -31,12 +31,11 @@ class Level2 extends React.Component {
                 </div>
                 <Wiseman textArr={["This is one of my many magic artifacts. By rotating the outer wheel, you can encrypt any message. Try it yourself!"]}/>
                 <Scroll cipherText={this.state.cText} displayText={this.state.dText} targetText={this.state.tText}/>
-                <KeyAlphabet onChange={this.changeText} />
-                <img src={"./keyalph.png"} />
-                <Next passed={true} nextLevel={"/level2tutorial"}/>
+                <VignereTable/> 
+                <Next passed={true} nextLevel={"/level3tutorial"}/>
             </div>
         )
     }
 }
 
-export default Level2;
+export default Level3Final;

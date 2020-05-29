@@ -70,6 +70,7 @@
   width: 100%;
   height: 100%;
   margin: 0px;
+  background-image: url('/background.jpg');
 }
 
 .nextLevel {
@@ -89,15 +90,18 @@
 }
 
 .scroll {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,90%);
-  text-align: center;
+ background-image: url('/scroll.png');
+ background-size: cover;
 }
 
 .tutorial {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.tutorialimg {
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -117,4 +121,11 @@
   left: 50%;
   transform: translate(-50%, -75%);
   text-align: center;
+}
+
+.scroll {
+  background-image: url("/scroll.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 405px;
 }

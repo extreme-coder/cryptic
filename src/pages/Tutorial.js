@@ -14,12 +14,12 @@ class Tutorial extends React.Component {
                     <Img src={'./background.jpg'} />
                 </div>
                 <div className="tutorial">
-                    <Img src={'./tutorial.png'} />
+                    <Img src={'./tutorial.jpg'} className={'tutorialimg'}/>
                 </div>
                 <div className="tutorial">
                     {this.props.text}
                 </div>
-                <Next/>
+                <Next passed={true} nextLevel={this.props.nextLevel}/>
             </div>
         );
     }
