@@ -26,7 +26,7 @@ class Wiseman extends React.Component {
                     <Col className="col-md-auto">
                         {
                         (this.state.textIndex < this.props.textArr.length-1) ? 
-                            (<Button onClick={this.nextLine}>
+                            (<Button className="btn-dark" onClick={this.nextLine}>
                                 Next
                             </Button>):''
                         }

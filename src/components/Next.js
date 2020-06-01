@@ -16,9 +16,9 @@ class Next extends React.Component {
             <div >
                 {(() => {
                     if (this.props.passed) {
-                        return <Link to={this.props.nextLevel} ><Button >Continue</Button></Link>;
+                        return <Link to={this.props.nextLevel} ><Button className="btn-dark" >Continue</Button></Link>;
                     } else {
-                        return <Button onClick={this.incorrect}>Continue</Button>
+                        return <Button className="btn-dark" onClick={this.incorrect}>Continue</Button>
                     }
                 })()}
             </div>

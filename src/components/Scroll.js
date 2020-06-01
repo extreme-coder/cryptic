@@ -10,7 +10,7 @@ class Scroll extends React.Component {
                 <Row className="row-mt-auto scroll" >
                     <Col sm>
                     </Col>
-                    <Col className="pt-5">
+                    <Col  style={{fontSize:'40px', paddingTop:'50px'}}>
                         <p>{this.props.displayText}</p>
                     </Col>
                     <Col sm>

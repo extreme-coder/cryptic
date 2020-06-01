@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import { Container, Col, Row } from 'react-bootstrap';
 
 class KeyAlphabet extends React.Component {
     constructor(props){
@@ -23,12 +24,24 @@ class KeyAlphabet extends React.Component {
 
     render() {
         return (
-            <div className="keyAlphabet">
-                <div style={{position:'relative', float: 'top'}}>{this.state.standardAlph}</div>
-                <div style={{position:'relative', float: 'bottom'}}>{this.state.keyAlph}</div>
-                <div style={{position:'relative', float: 'bottom', transform: 'translate(0%,10%)'}}>Key:{this.state.key}</div>
-                <div style={{position:'relative', float: 'bottom', transform: 'translate(0%,20%)'}}><Button onClick={this.setKey}>Set Key</Button></div>
-            </div>
+            <Container>
+                <Row>
+                    <Col className={this.props.type}>
+                        <div style={{position:"absolute", bottom:"140px", left:"180px"}}>
+                            <div>{this.state.standardAlph}</div>
+                            <div>{this.state.keyAlph}</div>
+                            <div>&nbsp;</div>
+                            <div style={{ fontSize: "20px", fontStyle: "bold" }}>Key:{this.state.key}</div>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Button onClick={this.setKey}>Set Key</Button>
+                    </Col>
+                </Row>
+            </Container>
+            
         );
     }
 }

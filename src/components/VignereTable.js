@@ -27,13 +27,13 @@ class VignereTable extends React.Component {
                 let newJ = i + j
                 if (newJ < 26) {
                     return (
-                        <Col>
+                        <Col className="vign">
                             {letterArr[newJ]}
                         </Col>
                     )
                 } else {
                     return (
-                        <Col>
+                        <Col className="vign">
                             {letterArr[newJ - 26]}
                         </Col>
                     )
@@ -48,7 +48,7 @@ class VignereTable extends React.Component {
         })
         return (
             <div>
-                <Button onClick={this.setKey}><p style={{color: 'black'}}>{rowArr}</p></Button>
+                <div onClick={this.setKey}><p style={{color: 'black'}}>{rowArr}</p></div>
             </div>
         )
     }

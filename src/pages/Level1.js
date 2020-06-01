@@ -12,7 +12,7 @@ import wheel from '../components/swheel.js'
 class Level1 extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { cText: "poopityscoop", dText: "poopityscoop", tText: "scoopdiddywhoop" }
+        this.state = { cText: "thisisasecretmessage", dText: "thisisasecretmessage", tText: "scoopdiddywhoop" }
     }
 
     changeValue(val) {
@@ -38,12 +38,12 @@ class Level1 extends React.Component {
                 </Row>
                 <Row className="row-mt-auto">
                     <Col md={3}>
-                        <Wiseman textArr={["This is one of my many magic artifacts. By rotating the outer wheel, you can encrypt any message. Try it yourself!"]} />
+                        <Wiseman textArr={["This is one of my many magic artifacts. By rotating the outer wheel, you can encrypt any message. Try it yourself!","And if you're wondering why the message has no spaces, it's because spaces can be a dead giveaway when you're trying to send a secret message."]} />
                     </Col>
                     <Col>
                         <Scroll cipherText={this.state.cText} displayText={this.state.dText} targetText={this.state.tText} />
                     </Col>
-                    <Col className="col-md-auto">
+                    <Col  md={3}>
                         <div style={{ bottom: '0px' }}>
                             <Next passed={true} nextLevel={"/level1tutorial"} />
                         </div>

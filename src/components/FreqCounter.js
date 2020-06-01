@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Button from 'react-bootstrap/Button';
+import { Container, Col, Row } from 'react-bootstrap';
 class FreqCounter extends React.Component {
     constructor(props){
         super(props);
@@ -31,9 +32,26 @@ class FreqCounter extends React.Component {
 
     render() {
         return (
-            <div className="freqCounter" onClick={this.handleClick}>
-                The most common letter is: {this.state.letter}
-            </div>
+            <Container>
+                <Row className="pt-1">
+                    <Col>
+                    The most common letter is 
+                    </Col>
+                </Row>
+                <Row >
+                    <Col style={{ fontSize: '60px' }}>
+                      {this.state.letter} &nbsp;
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <Button onClick={this.handleClick} className="btn-primary"> Frequency Counter </Button>
+                    </Col>
+                </Row>
+                
+                
+            </Container>
+           
         );
     }
 }
